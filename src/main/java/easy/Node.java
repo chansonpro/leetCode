@@ -7,7 +7,7 @@ package easy;
  */
 public class Node {
     private int value; //元素值
-    private int next; // 后驱
+    private Node next; // 后驱
 
     public Node(int data) {
         this.value = data;
@@ -21,11 +21,11 @@ public class Node {
         this.value = value;
     }
 
-    public int getNext() {
+    public Node getNext() {
         return next;
     }
 
-    public void setNext(int next) {
+    public Node setNext(Node next) {
         this.next = next;
     }
 }
