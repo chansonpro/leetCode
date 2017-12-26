@@ -10,9 +10,9 @@ public class ReverseList {
     public Node reverseList(Node head){
         Node pre = head;// 上一节点
         Node cur = head.getNext();// 当前结点
-        Node tmp = null;
+        Node tmp;
         while (cur !=null){
-            tmp = head.getNext();//当前结点的指针域
+            tmp = cur.getNext();//当前结点的指针域
             cur.setNext(pre);// 反转指针域的指向
             // 指针往下移动
             pre = cur;
