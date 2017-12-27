@@ -28,10 +28,14 @@ public class FromQueueToStack {
         }
         if (queue1.isEmpty()){
             while (queue2.size()>1){
+                // poll使用方法,获取并删除列表的第一个元素
+                // peek使用方法,获取并不删除列表的第一个元素
+                // pop取堆栈中取出元素，并出栈
                 queue1.add(queue2.poll());
             }
             return queue2.poll();
         }
+
         if (queue2.isEmpty()){
             while (queue1.size()>1){
                 queue2.add(queue1.poll());
