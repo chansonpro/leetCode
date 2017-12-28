@@ -35,7 +35,6 @@ public class FromQueueToStack {
             }
             return queue2.poll();
         }
-
         if (queue2.isEmpty()){
             while (queue1.size()>1){
                 queue2.add(queue1.poll());
