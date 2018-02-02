@@ -43,6 +43,4 @@ public class FromQueueToStack {
         }
         return 0;
     }
-
-
 }
