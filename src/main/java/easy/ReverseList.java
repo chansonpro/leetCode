@@ -7,7 +7,7 @@ package easy;
  */
 public class ReverseList {
     //1.反转单向链表,返回新的链表的头结点（遍历节点）
-    public static Node reverseList(Node head){
+    private static Node reverseList(Node head){
         Node pre = head;// 上一节点
         Node cur = head.getNext();// 当前结点
         Node tmp;
@@ -22,7 +22,10 @@ public class ReverseList {
         head.setNext(null);
         return pre;
     }
-    //2.双向链表，
+    //2.双向链表，反转
+    /*private static DoubleNode reverseList(DoubleNode head){
+
+    }*/
 
     public static void main(String[] args) {
         Node head = new Node(0);
