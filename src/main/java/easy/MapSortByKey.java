@@ -21,7 +21,7 @@ public class MapSortByKey {
                 });
         map.put("a","hangzhou");
         map.put("b","beijing");
-        map.put("c","chaina");
+        map.put("c","china");
         map.put("d","asdffh");
 
         Set<String> keySet = map.keySet();//使用keySet()方法获取所有的key值
